@@ -9,12 +9,8 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    
 }
 
-.header{
-    color: rgb(0, 0, 0);
-}
 
 #navbar{
     position: sticky;
@@ -22,6 +18,16 @@ body{
     overflow: hidden;
     background-color: transparent;
     padding: 20px;
+
+    @media screen and (max-width: 400px) {
+    font-size: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 20px;
+    }
 }
 
 #navbar a {
@@ -31,6 +37,11 @@ body{
     text-align: center;
     padding: 8px;
     text-decoration: none;
+
+    @media screen and (max-width: 400px) {
+    float: inline-start;
+    display: flex;
+    }
 }
 
 #navbar li{
@@ -42,6 +53,11 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
+
+    @media screen and (max-width: 400px) {
+    display: inline-block;
+    }
+
 }
 
 #navbar a:hover{
@@ -53,6 +69,12 @@ body{
     padding-top: 20px;
     padding-left: 20px;
     position: absolute;
+    
+    @media screen and (max-width: 400px) {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    }
 }
 
 .name:hover{
@@ -64,6 +86,11 @@ body{
     text-align: center;
     border-bottom: 2px black solid ;
     border-top: 2px black solid;
+    color: black;
+
+    @media screen and (max-width: 400px) {
+        font-size: 20px;
+    }
 }
 
 .project-left{
@@ -73,6 +100,19 @@ body{
     border: 2px black solid;
     overflow: hidden;
     z-index: 1;
+
+    @media screen and (max-width: 400px) {
+        width: auto;
+        padding: 50px;
+        text-align: center;
+        padding-top: 100px;
+        font-size: 20px;
+
+        h4{
+            font-size: 30px;
+            padding-bottom: 20px ;
+        }
+    }
 }
 
 .project-left ul{
@@ -103,10 +143,18 @@ body{
     border: 2px black solid;
     overflow: hidden;
     z-index: 1;
+
+    @media screen and (max-width: 400px) {
+        width: auto;
+    }
 }
 
 .article-main{
     display: inline-flex;
+
+    @media screen and (max-width: 400px) {
+    display: block;
+    }
 }   
 
 .education-right{
@@ -116,6 +164,10 @@ body{
     border: 2px black solid;
     overflow: hidden;
     z-index: 1;
+
+    @media screen and (max-width: 400px) {
+        width: auto;
+    }
 }
 
 .article-top{
@@ -125,6 +177,13 @@ body{
 .reviews{
     padding: 30px;
     display: inline-flex;
+
+    @media screen and (max-width: 400px) {
+    display: inline-block;
+    font-size: 20px;
+    padding: 30px;
+    width: auto;
+    }
 }
 
 .rev{
@@ -134,15 +193,30 @@ body{
     width: 20vw;
     height: 20vh;
     border-radius: 20px;
+
+    @media screen and (max-width: 400px) {
+        width: auto;
+        height: auto;
+    }
 }
 
 .rev-title{
     padding-left: 30px;
     padding-top: 50px;
+
+    @media screen and (max-width: 400px) {
+        text-align: center;
+    }
 }
 
 .education-right h4{
     padding-bottom: 20px;
+    width: auto;
+    
+    @media screen and (max-width: 400px) {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
 }
 
 .underline{
@@ -154,3 +228,4 @@ body{
 .bottom-article{
     margin-top: 20px;
 }
+
