@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header{
+    color: rgb(0, 0, 0);
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 20px;
+}
+
+#navbar a {
+    float: right;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+
+#navbar li{
+    float: right;
+}
+
+#navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navbar a:hover{
+    color: rgb(204, 0, 207);
+    text-decoration: underline;
+}
+
+.name{
+    padding-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+}
+
+.name:hover{
+    text-shadow: 2px 3px 5px rgb(129, 129, 129);
+}
+
+.header{
+    padding: 100px;
+    text-align: center;
+    border-bottom: 2px black solid ;
+    border-top: 2px black solid;
+}
+
+.project-left{
+    padding: 20px;
+    width: 300px;
+    height: 50vh;
+    border: 2px black solid;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.project-left ul{
+    list-style: none;
+}
+
+.project-left li{
+    line-height: 28px;
+    padding: 20px;
+    list-style: none;
+}
+
+.project-left a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer{
+    padding: 50px;
+    top: 0;
+    text-align: center;
+}
+
+.main-article{
+    padding: 20px;
+    width: 800px;
+    height: 50vh;
+    border: 2px black solid;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.article-main{
+    display: inline-flex;
+}   
+
+.education-right{
+    padding: 20px;
+    width: 300px;
+    height: 50vh;
+    border: 2px black solid;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.article-top{
+    padding-bottom: 60px;
+}
+
+.reviews{
+    padding: 30px;
+    display: inline-flex;
+}
+
+.rev{
+    border: 2px black solid;
+    padding: 30px;
+    margin: 30px;
+    width: 20vw;
+    height: 20vh;
+    border-radius: 20px;
+}
+
+.rev-title{
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.education-right h4{
+    padding-bottom: 20px;
+}
+
+.underline{
+    width: 100vw;
+    border: 2px black solid;
+    margin-left: -20px
+}
+
+.bottom-article{
+    margin-top: 20px;
+}
